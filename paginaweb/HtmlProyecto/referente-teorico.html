@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Guide Project </title>
+	<!--la etiqueta meta se utiliza para agregar información a la página-->
+	<!--el meta charset detemina como se verán ciertos caracateres -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="keywords" content="multi-level menu, mobile menu, responsive, space-saving, drop-down menu, css, jquery" />
+	<meta name="description"content="En esta secci&oacute;n se encuentran los aspectos preliminares de un proyecto de investigaci&acute;on"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/><!-- meta especifica. el viewport sirve para que el dispositivo que este visualizando el sitio web lo veo según el ancho del dispositivo -->
+	<link rel="shortcut icon" type="image/x-icon" href="../faviconGp.ico"/>
+	<link rcl="author" type="text/plain" href="humans.txt"/>
+	<!-- se recomienda que los plug-in esten antes de cargar la libreria de css-->
+	<link rel="sitemap" type="aplication/xml"title="sitemap" href="sitemap.xml"/>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+	<!--pertenece al menú-->
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+
+	<!--fancybox-->
+	<link rel="stylesheet" href="../css/jquery.fancybox.css" media="screen" />
+		
+</head>
+<body>
+<!-- Navigation -->
+  <section id="navigation" class="navbar-fixed-top ">
+    <div class="menu-position">
+      <div class="nav-logo"> 
+        <a href="../index.html" class="logo">
+          <img src="../img/Titulo.png" class="fade  rotarY"id="maximizar"alt="logo">
+        </a>
+      </div>
+
+      <a class="mini-nav-button"><i class="nav-fa fa fa-bars"></i></a>
+
+      <div class="nav-menu"> 
+    <nav id="menu-principal"><!--es una etiqueta de menú de navegación, o conjunto de enlaces a otras páginas-->
+<ul>
+	<li class="active"><a href="../index.html"class="active">Inicio</a><li/>
+	<li><a href="../acerca.html">Acerca </a><li/>
+	<li><a href="../servicio.html">Proyecto </a><li/>
+	<li><a href="../trabajo.html">Trabajos</a><li/>
+	<li><a href="../contacto.html">Contacto</a><li/>	
+
+</ul>
+	</nav>	
+      </div>
+    </div>
+  </section>
+<!--la etiqueta section permite trabajar por secciones, es decir por bloques donde se puede colocar un título diferente a cada seccción -->
+	<section id="contenido">
+		<!--acá se agrega un contenedor que va a contener todo lo de los servios a su ves dentro de este contenedor se agregara otro-->
+		<section id="servicios-principal">
+			<br/>
+			
+			<div class="main clearfix">
+				
+				<div class="column">
+					<div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+					<ul class="dl-menu">
+							<li>
+								<a href="planteamiento.html">1.Descripción del Problema</a>
+								
+							</li>
+							<li>
+								<a href="justificacion.html">2.Justificación</a>
+								
+							</li>
+							<li>
+								<a href="#">3.Objetivos</a>
+								<ul class="dl-submenu">
+									<li>
+										<a href="objetivos.html">3.1 Objetivo general</a>
+									</li>	
+									<li>
+										<a href="objetivos.html#especificos">3.2 Objetivo específico</a>
+									</li>
+								
+								</ul>
+							</li>
+							<li>
+								<a href="antecedentes.html">4.Antecedentes</a>
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="referente-teroico.html">5.Marco de referencia</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="Metodologia.html">6.Metodología</a>
+								<ul class="dl-submenu">
+									<li>
+										<a href="Metodologia.html#tipo">Tipo de investigación</a>
+									</li>	
+									<li>
+										<a href="Metodologia.html#localizacion">3.2 Localización</a>
+									</li>
+									<li>
+										<a href="Metodologia.html#localizacion">3.2 Localización</a>
+									</li>
+									<li>
+										<a href="Metodologia.html#localizacion">3.2 Localización</a>
+									</li>
+								
+								</ul>
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="esquema.html">7.Esquema temático</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="presupuesto.html">8.Presupuesto</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="cronograma.html">9.Cronograma</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="bibliografia">10.Bibliografía</a>
+								
+							</li>
+
+						</ul>
+					</div><!-- /dl-menuwrapper -->
+				</div>
+			</div>
+			
+				 
+			<div id="formatresd">
+			 <nav id="menu-peque">
+			
+					<li><a class="nudge" href="../Text-Editor/demo.html" target="_blank">Editar</a><li/>
+					<a class="nudge" href="../Formato.doc" download="Formato Guia">Descargar Formato</a><br/>
+					<!--<a class="nudge" href="#">Agregar evento</a>-->
+					
+					<a class="ifancybox nudge" href="http://localhost/paginaweb/calendario/">Agregar evento</a>
+			
+			 </nav>
+			</div>
+			<!--<img id="img-servicios" src="img/servicios.png" alt="Servicios"/>
+			Imagen del corazón que esta sobre todo en un costado
+			<img src="http://uppix.com/f-imageedit_17_36253813f910016872d.gif" style=" position: fixed; left: 2px; top: 420px;  border=" target="_blank" rel="nofollow" alt="corazón"><!--el alt="" es para cuando no se carga la imagen que muestre el comentario-->
+		<!--Article para el texto de los servicios-->
+
+			<article id="nuestros-servicios">
+				<p id="comentario">Según el tipo de investigación que se este desarrollando aplicara los siguientes marcos espuesto </p>
+<ul id="toggle-view">
+	
+	<li>
+		
+		<h3>Marco teórico</h3>
+		<span>+</span>
+		<div class="panel">
+			<p>“Es la exposición y análisis de la teoría o grupo de teorías que sirven como fundamento para explicar los antecedentes e interpretar los resultados de la investigación”. <cite>Galán (2008)</cite></p></br>
+			<center><img class="img-teorico"src="../img/marco-teorico.png"></center>
+			<p>El Marco Teórico incluye todas aquellas teorías relevantes sobre las que se soporta el problema de investigación. Por ejemplo, si la investigación quiere centrarse en procesos de aprendizaje, el marco teórico deberá  construirse sobre las teorías del conductismo, el cognitivismo, la teoría de la gestalt, la teoría del aprendizaje de Skinner, etc <a href="http://datateca.unad.edu.co/contenidos/100104/100104_EXE/leccin_12_el_marco_terico_planteamiento_de_objetivos_hiptesis_y_seleccin_de_variables.html"><cite>(UNAD,s,f).</cite></a></p>
+			<a id="boton-3d"class="video"href="https://www.youtube.com/embed/PSz8IrAsSYU?t=1m7s">Ver video</a>
+		</div>
+	</li>
+	<li>
+		
+		<h3>Marco conceptual</h3>
+		<span>+</span>
+		<div class="panel" id="conceptual">
+			<p>Como su nombre lo indica, es el grupo de conceptos fundamentales,
+			propios del tema o industria particular donde se realice el trabajo.
+			No es un glosario, es una definición conceptual. </br></br> <h2>Ejemplo:</h2>
+		<h1>MATERIALES ARCILLOSOS:</h1>
+		Son materiales naturales de grano fino, de aspecto terroso,
+		constituido por un grupo de sustancias cristalinas conocidas como
+		minerales arcillosos y fragmentos de rocas y otros materiales. </p>
+			
+		</div>
+	</li>
+	<li>
+		
+		<h3>Marco historico</h3>
+		<span>+</span>
+		<div class="panel" id="conceptual">
+			<p>En el marco histórico se menciona la evolución y desarrollo del objeto de estudio, desde diferentespuntos de vista. Se lleva a cabo una descripción de la evolución histórica del objeto de estudio,desde su origen hasta nuestros días.</p>
+			<center><img class="img-teorico redonda"src="../img/marco-historico.jpg"></center>
+		</div>
+	</li>
+	
+	<li>
+		
+		<h3>Estado del arte</h3>
+		<span>+</span>
+		<div class="panel">
+			<p>Consiste en “ir tras las huellas” del tema que se pretende investigar, permite determinar cómo ha sido tratado el tema, cómo se encuentra en el momento de realizar la propuesta de investigación y cuáles son las tendencias. Su elaboración se desarrolla en dos fases: Fase heurística: búsqueda y recopilación de fuentes de información Fase Hermenéutica: cada una de las fuentes investigadas se leerá, se analizará, se interpretará y se clasificará de acuerdo con su importancia dentro del trabajo de investigación <cite>(Rojas,2007).</cite></p>
+			<a id="boton-3d"class="video"href="https://www.youtube.com/embed/yobZH6I0kAA">Ver video</a>
+		</div>
+	</li>
+	<li>
+		<h3>Marco político </h3>
+		<span>+</span>
+		<div class="panel">
+			<p> Hace referencia a los soportes normativos y reglamentarios que aportan en
+				el desarrollo del proyecto.</p>
+		</div>
+	</li>
+	<li>
+		<h3>Marco legal</h3>
+		<span>+</span>
+		<div class="panel">
+			<p>El marco legal es el conjunto de disposiciones que regulan las acciones del proyecto. Se debe relacionar la normatividad interna y/o externa de carácter técnico, jurídico o reglamentario, que debe ser cumplida específicamente por el proyecto <a href="http://www.bogota.unal.edu.co/planeacion/download/herramientas-metodologia/Guia_Formulacion_Proyectos.pdf"> <cite>(Universidad Nacional de Colombia, 2007)</cite></a> .</p>
+		</div>
+	</li>
+	<li>
+		<h3>Marco tecnológico</h3>
+		<span>+</span>
+		<div class="panel">
+			<p>Corresponde a toda la narrativa literaria técnica de ingeniería, de las herramientas a utilizar en el proyecto.
+				</br></br>
+			<cite>Bases de datos, controles , plataformas, herramientas desarrollo 
+				software, multimediales, mysql, software.</cite>
+</p></br>
+			<center><img class="img-teorico redonda"src="../img/marco-tecnologico.jpg"></center>
+		</div>
+	</li>
+	
+
+</ul>
+				
+
+			</article>
+		</section>
+
+		
+<footer><p><b>&copy; Copyright</b> Fabián Durán <br/><br/></p></footer>	
+	</section>
+		
+
+<script src="../js/modernizr.custom.js"></script>
+	<!--Se invoca desde los servidores de google la librería de Jquery, por eso solo funciona con internet -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+	</script>
+	<script>
+		!window.Jquery && document.write("<script src='../js/jquery.min.js'><\/script>");
+	</script>
+	  <script type="text/javascript" src="../js/n/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="../js/n/plugins.js"></script>
+
+		<script src="../js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-3', classout : 'dl-animate-out-3' }
+				});
+			});
+		</script>
+
+		<script async type="text/javascript">
+				$(document).ready(function(){
+					$("#animacion").hide("slow");
+					$("#animacion").show(1200, function(){
+					//$("#animacion").css("color", "#990000");
+												      });
+											});
+		</script>
+		<!--Animación del menu pequeño de enlace; editor; descarga..-->
+			<script type='text/javascript'>
+				// <![CDATA[
+				$(document).ready(function() {
+				$('a.nudge').hover(function() { //mouse in
+				$(this).animate({ paddingLeft: '45px' }, 400);
+				}, function() { //mouse out
+				$(this).animate({ paddingLeft: '1px' }, 400);
+				});
+				});
+				//]]>
+			</script>
+
+			<!--iframe fancybox-->
+	<script src="../js/jquery.fancybox.js"></script>
+	<script src="../js/jquery.mousewheel-3.0.6.pack.js"></script>
+			<!--iframe fancybox-->
+	<script>
+	$(document).ready(function(){
+    $(".ifancybox").fancybox({
+         'width' : '75%',
+         'height' : '75%',
+         'autoScale' : false,
+         'transitionIn' : 'none',
+         'transitionOut' : 'none',
+         'type' : 'iframe'
+     });
+ 		});</script>
+ 		<!--abre video en fancybox-->
+	<script type="text/javascript">  
+	$(document).ready(function(){  
+    $(".video").fancybox({  
+        'autoScale'     : false,  
+        'transitionIn'      : 'none',  
+        'transitionOut'     : 'none',  
+        'width'         : 680,  
+        'height'        : 450,  
+        'type'          : 'iframe'  
+   		 });  
+	});  
+</script>  
+
+ 		<script type="text/javascript">
+
+$(document).ready(function () {
+	
+	$('#toggle-view li').click(function () {
+
+		var text = $(this).children('div.panel');
+
+		if (text.is (':hidden')) {
+			text.slideDown('200');
+			$(this).children('span').html('-');		
+		} else {
+			text.slideUp('200');
+			$(this).children('span').html('+');		
+		}
+		
+	});
+
+});
+
+</script>
+
+</body>
+<html/>
+
+

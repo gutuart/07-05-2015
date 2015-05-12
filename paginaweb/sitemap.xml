@@ -1,0 +1,9 @@
+<!-- los motores de buscan posicionan de mejor manera el sitio web -->
+<?xml version-"1.0" encoding-"utf-8" ?>
+
+<urlset xmlns-"http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>http://acavaeldominio.com/index.html<loc><loc/><url/>
+	<url>http://acavaeldominio.com/acerca.html<loc><loc/><url/>
+	<url>http://acavaeldominio.com/contacto.html<loc><loc/><url/>
+	<url>http://acavaeldominio.com/Juegos.html<loc><loc/><url/>
+<urlset/>

@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<!--si se coloca deprimeras <meta charset="utf-8"/> no hay que estar colocando &acute para las tíldes-->
+	<meta charset="utf-8"/>
+	<title>Guide Project.secci&oacute;n trabajo </title>
+	<!--la etiqueta meta se utiliza para agregar información a la página-->
+	<!--el meta charset detemina como se verán ciertos caracateres -->
+	
+	<meta name="description"content="Bienvenido a mi p&aacute;ginota"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/><!-- meta especifica. el viewport sirve para que el dispositivo que este visualizando el sitio web lo veo según el ancho del dispositivo -->
+	<link rel="shortcut icon" type="image/x-icon" href="faviconGp.ico"/>
+	<link rcl="author" type="text/plain" href="humans.txt"/>
+	<link rel="sitemap" type="aplication/xml"title="sitemap" href="sitemap.xml">
+	<!-- se recomienda que los plug-in esten antes de cargar la libreria de css-->
+	<link rel="stylesheet" href="css/jquery.fancybox.css"/>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+	<!--Se invoca desde los servidores de google la librería de Jquery, por eso solo funciona con internet -->
+	
+</head>
+<body>
+<!-- Navigation -->
+  <section id="navigation" class="navbar-fixed-top ">
+    <div class="menu-position">
+      <div class="nav-logo"> 
+        <a href="index.html" class="logo">
+          <img src="img/Titulo.png" class="fade  rotarY"id="maximizar"alt="logo">
+        </a>
+      </div>
+
+      <a class="mini-nav-button"><i class="nav-fa fa fa-bars"></i></a>
+
+      <div class="nav-menu"> 
+    <nav id="menu-principal"><!--es una etiqueta de menú de navegación, o conjunto de enlaces a otras páginas-->
+<ul>
+	<li><a href="index.html"class="active">Inicio</a><li/>
+	<li><a href="acerca.html">Acerca </a><li/>
+	<li><a href="servicio.html">Proyecto </a><li/>
+	<li><a href="trabajo.html">Trabajos</a><li/>
+	<li><a href="contacto.html">Contacto</a><li/>	
+
+</ul>
+	</nav>	
+      </div>
+    </div>
+  </section>
+<!--la etiqueta section permite trabajar por secciones, es decir por bloques donde se puede colocar un título diferente a cada seccción -->
+<section id="contenido">
+	<!--Comando de atajo:: section#trabajos ::+ control+barra espaciadora;; eso para id; para clases sectio.trabajos-->
+	<section id="trabajos">
+		<h2>Algunos de nuestrostrabajos</h2>
+		<div class="portafolio">
+			<article>
+				<!--Necesita el atributo rel por que así es como lo va a jalar el jquery:: la clase fade esta programa para cuando se pase el mouse por encima de la imgen se opaque:: title es lo que va aparecer debajo de la imagen-->
+				<!--<a rel="trabajos" class="fade" href="Text-Editor/demo.html">-->
+				<a class="ifancybox" href="Text-Editor/demo.html">
+					<!--aca va la imagen pequeña-->
+					<img class="redonda"src="img/trabajo1-mini.png">
+				</a>
+			</article>
+			<article>
+				<a rel="trabajos" class="fade" href="img/trabajo2.png" title="Trabajo1">
+				<img class="redonda"src="img/trabajo2-mini.png">
+				</a>
+			</article>
+			<article>
+				<a rel="trabajos" class="fade" href="img/trabajo3.png" title="Trabajo2">
+				<img class="redonda"src="img/trabajo3-mini.png">
+				</a>
+			</article>
+			<article>
+				<a rel="trabajos" class="fade" href="img/trabajo1.png" title="Trabajo3">
+				<img class="redonda"src="img/trabajo1-mini.png">
+				</a>
+			</article>
+			<article>
+				<a rel="trabajos" class="fade" href="img/trabajo2.png" title="Trabajo4">
+				<img class="redonda"src="img/trabajo2-mini.png">
+				</a>
+			</article>
+		 </div>
+		 <div class="portafolio">
+			<article>
+				<!--Necesita el atributo rel por que así es como lo va a jalar el jquery:: la clase fade esta programa para cuando se pase el mouse por encima de la imgen se opaque:: title es lo que va aparecer debajo de la imagen-->
+				<a rel="trabajos" class="fade" href="img/trabajo1.png" title="Trabajo6">
+					<!--aca va la imagen pequeña-->
+					<img class="redonda"src="img/trabajo1-mini.png">
+				</a>
+			</article>
+			<article>
+				<a rel="trabajos" class="fade" href="img/trabajo2.png" title="Trabajo7">
+				<img class="redonda"src="img/trabajo2-mini.png">
+				</a>
+			</article>
+			<article>
+				<a rel="trabajos" class="fade" href="img/trabajo3.png" title="Trabajo8">
+				<img class="redonda"src="img/trabajo3-mini.png">
+				</a>
+			</article>
+			<article>
+				<a rel="trabajos" class="fade" href="img/trabajo1.png" title="Trabajo9">
+				<img class="redonda"src="img/trabajo1-mini.png">
+				</a>
+			</article>
+			<article>
+				<a rel="trabajos" class="fade" href="img/trabajo2.png" title="Trabajo10">
+				<img class="redonda"src="img/trabajo2-mini.png">
+				</a>
+			</article>
+		 </div>
+	</section>
+	
+		
+
+</section>
+<footer>Aprendiendo Html5, CSS3, Y RESPONSIVE DESING<A rel="author" HREF="https://www.facebook.com/fabian.duran3" target="_blank"> @fabian</A><a class="ifancybox" href="Text-Editor/demo.html">
+</footer><!-- publicidad y bot sociales..target="_blank abre el link en otra pestaña-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><!--este link actualiza automaticamente las versiones de jquery-->
+
+	<!--este comando carga jquery cuando el dispositivo no es ta conectado a internet..->como la barra es un caracter especial en javaScript hay que comentarla para que la considere como candena de texto,entonces hay que escaparla contra la barra <\/script>");.(video 8) -->
+	<script>
+		!window.Jquery && document.write("<script src='js/jquery.min.js'><\/script>");
+	</script>
+	<script type="text/javascript" src="js/n/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="js/n/plugins.js"></script>
+	<script src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="js/jquery.fancybox.js"></script>
+	
+	<!-- este script ejecuta el flexslider, se crea un objeto window. este analiza hasta que window a cargado y ejecuta la función-->
+	<!-- $('.flexslider').flexslider(); los puntos indican que es una clase de html por eso .flexslider..este comando busca en el elemento que tenga la clase flexslider que en este caso es <div>de flexslider y ejecuta el metódo -->
+	<script>
+	/*Al documento le voy a prender el evento ready*/
+		$(document).on("ready",function(){
+			/*cunado se inicia con $ es por que es jquery*/
+			$(".fade").fancybox();
+		});
+	</script>
+	<script>
+	$(document).ready(function(){
+    $(".ifancybox").fancybox({
+         'width' : '75%',
+         'height' : '75%',
+         'autoScale' : false,
+         'transitionIn' : 'none',
+         'transitionOut' : 'none',
+         'type' : 'iframe'
+     });
+ });</script>
+</body>
+<html/>
+
+

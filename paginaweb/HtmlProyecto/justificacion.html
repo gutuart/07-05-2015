@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Guide Project </title>
+	<!--la etiqueta meta se utiliza para agregar información a la página-->
+	<!--el meta charset detemina como se verán ciertos caracateres -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="keywords" content="multi-level menu, mobile menu, responsive, space-saving, drop-down menu, css, jquery" />
+	<meta name="description"content="En esta secci&oacute;n se encuentran los aspectos preliminares de un proyecto de investigaci&acute;on"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/><!-- meta especifica. el viewport sirve para que el dispositivo que este visualizando el sitio web lo veo según el ancho del dispositivo -->
+	<link rel="shortcut icon" type="image/x-icon" href="../faviconGp.ico"/>
+	<link rcl="author" type="text/plain" href="humans.txt"/>
+	<!-- se recomienda que los plug-in esten antes de cargar la libreria de css-->
+	<link rel="sitemap" type="aplication/xml"title="sitemap" href="sitemap.xml"/>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+	<!--pertenece al menú-->
+	<!-- menu animado jquery-->
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
+		<script src="../js/modernizr.custom.js"></script>
+	
+	<link rel="stylesheet" href="../css/tabby.css">
+	<!--fancybox-->
+	<script src="https;//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+	</script>
+
+	<script>
+		!window.Jquery && document.write("<script src='../js/jquery.min.js'><\/script>");
+	</script>
+	<script src="../js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-3', classout : 'dl-animate-out-3' }
+				});
+			});
+		</script>
+		
+</head>
+<body>
+<!-- Navigation -->
+  <section id="navigation" class="navbar-fixed-top ">
+    <div class="menu-position">
+      <div class="nav-logo"> 
+        <a href="index.html" class="logo">
+          <img src="../img/Titulo.png" class="fade  rotarY"id="maximizar"alt="logo">
+        </a>
+      </div>
+
+      <a class="mini-nav-button"><i class="nav-fa fa fa-bars"></i></a>
+
+      <div class="nav-menu"> 
+    <nav id="menu-principal"><!--es una etiqueta de menú de navegación, o conjunto de enlaces a otras páginas-->
+<ul>
+	<li class="active"><a href="../index.html"class="active">Inicio</a><li/>
+	<li><a href="../acerca.html">Acerca </a><li/>
+	<li><a href="../servicio.html">Proyecto </a><li/>
+	<li><a href="../trabajo.html">Trabajos</a><li/>
+	<li><a href="../contacto.html">Contacto</a><li/>	
+
+</ul>
+	</nav>	
+      </div>
+    </div>
+  </section>
+<!--la etiqueta section permite trabajar por secciones, es decir por bloques donde se puede colocar un título diferente a cada seccción -->
+	<section id="contenido">
+		<!--acá se agrega un contenedor que va a contener todo lo de los servios a su ves dentro de este contenedor se agregara otro-->
+		<section id="servicios-principal">
+			<br/>
+			
+			<div class="main clearfix">
+				
+				<div class="column">
+					<div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+					<ul class="dl-menu">
+							<li>
+								<a href="planteamiento.html">1.Descripción del Problema</a>
+								<!--<ul class="dl-submenu">
+									<li>
+										<a href="#">Men</a>
+										<ul class="dl-submenu">
+											<li><a href="#">Shirts</a></li>
+											<li><a href="#">Jackets</a></li>
+											<li><a href="#">Chinos &amp; Trousers</a></li>
+											<li><a href="#">Jeans</a></li>
+											<li><a href="#">T-Shirts</a></li>
+											<li><a href="#">Underwear</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Women</a>
+										<ul class="dl-submenu">
+											<li><a href="#">Jackets</a></li>
+											<li><a href="#">Knits</a></li>
+											<li><a href="#">Jeans</a></li>
+											<li><a href="#">Dresses</a></li>
+											<li><a href="#">Blouses</a></li>
+											<li><a href="#">T-Shirts</a></li>
+											<li><a href="#">Underwear</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="#">Children</a>
+										<ul class="dl-submenu">
+											<li><a href="#">Boys</a></li>
+											<li><a href="#">Girls</a></li>
+										</ul>
+									</li>
+								</ul>-->
+							</li>
+							<li>
+								<a href="justificacion.html">2.Justificación</a>
+								<!--<ul class="dl-submenu">
+									<li><a href="#">Camera &amp; Photo</a></li>
+									<li><a href="#">TV &amp; Home Cinema</a></li>
+									<li><a href="#">Phones</a></li>
+									<li><a href="#">PC &amp; Video Games</a></li>
+								</ul>-->
+							</li>
+							<li>
+								<a href="#">3.Objetivos</a>
+								<ul class="dl-submenu">
+									<li>
+										<a href="objetivos.html">3.1 Objetivo general</a>
+									</li>	
+									<li>
+										<a href="objetivos.html#especificos">3.2 Objetivo específico</a>
+									</li>
+								
+								</ul>
+							</li>
+							<li>
+								<a href="antecedende.html">4.Antecedentes</a>
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="#">5.Marco de referencia</a>
+								<ul class="dl-submenu">
+									<li>
+										<a href="#">5.1 Marco teórico</a>
+									</li>
+									<li>
+										<a href="#">5.2 Conceptual</a>
+									</li>
+									<li>
+										<a href="#">5.3 Historico</a>
+									</li>
+									<li>
+										<a href="#">5.4 Estado actual</a>
+									</li>
+									<li>
+										<a href="#">5.5 Politico & legal</a>
+									</li>
+									
+									<li>
+										<a href="#">5.6 Tecnologico</a>
+									</li>
+								
+								</ul>
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="Metodologia.html">6.Metodología</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="#">7.Esquema temático</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="#">8.Presupuesto</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="#">9.Cronograma</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="#">10.Bibliografía</a>
+								
+							</li>
+
+						</ul>
+					</div><!-- /dl-menuwrapper -->
+				</div>
+			</div>
+			
+				 
+			  <nav id="menu-peque">
+			
+					<li><a class="nudge" href="../Text-Editor/demo.html" target="_blank">Editar</a><li/>
+					<a class="nudge" href="../Formato.doc" download="Formato Guia">Descargar Formato</a><br/>
+					<!--<a class="nudge" href="#">Agregar evento</a>-->
+					
+					<a class="ifancybox nudge" href="http://localhost/paginaweb/calendario/">Agregar evento</a>
+			
+			</nav>
+			<!--<img id="img-servicios" src="img/servicios.png" alt="Servicios"/>
+			Imagen del corazón que esta sobre todo en un costado
+			<img src="http;//uppix.com/f-imageedit_17_36253813f910016872d.gif" style=" position; fixed; left; 2px; top; 420px;  border=" target="_blank" rel="nofollow" alt="corazón"><!--el alt="" es para cuando no se carga la imagen que muestre el comentario-->
+		<!--Article para el texto de los servicios-->
+
+			<article id="nuestros-servicios">
+
+				<h3 id="animacion">Justificación</h3>
+				<p> Son las razones por las cuales se piensa realizar el proyecto. Pueden ser razones
+				de orden institucional, económico, social, científico, técnico ó cultural.
+				La justificación es fundamental en la formulación del proyecto. En este componente
+				un formulador puede ser tan específico como lo desee.
+				</p>
+					
+
+			</article>
+		</section>
+
+		<section id="servicios-tipos">
+			<article id="servicio1">
+				<!--Acá va el menú de navegación de la estructura de desarrollo del proyecto-->
+				<h3>La justificación de la Investigación</h3>
+					<p>Justificar una investigación es exponer las razones por las cuales se quieres realizar. </p>
+					<br/>
+					<p>Toda investigación debe realizarse con un propósito definido. Debe explicar porque es conveniente la investigación y qué o cuáles son los beneficios que se esperan con el conocimiento obtenido. 
+				</p>	
+				<br/>
+				<p>El investigador tiene que saber <b>"vender la idea"</b> de la investigación a realizar, por lo que deberá acentuar sus argumentos en los beneficios a obtener y a los usos que se le dará al conocimiento. 
+				</p>
+					
+				<!--Etiqueta hr dibuja linea horizontal-->
+				<hr/> 
+			</article>
+				<!--Etiqueta audio PARA QUE EL AUDIO SEA responsibe desing se tiene que meter en un contedor en una div-->
+				<article id="servicio2">
+					<h3><marquee> Valor potencial de una investigación</marquee></h3>
+		
+					<div id="tresd">
+					<nav id="tabby-1" class="tabby-tabs" data-for="example-tab-content">
+						<ul>
+							<li><a data-target="tab1" href="#">1.Conveniencia</a></li>
+							<li><a data-target="tab2" href="#">2.Relevancia social</a></li>
+							<li><a data-target="tab3" href="#">3.implicaciones prácticas</a></li>
+							<li><a data-target="tab4" href="#">4.Valor teórico</a></li>
+							<li><a data-target="tab5" href="#">5.Utilidad metodólogica</a></li>
+						</ul>
+					</nav>
+					</div>
+					<p id="comentario">No necesariamente la Investigación debe responde a todas las interrogantes</p>
+					<div class="tabby-content" id="example-tab-content">
+
+						<div data-tab="tab1">
+							<img id="img-interrogantes"src="../img/problema-practico.jpg">
+							<p>¿Qué tan conveniente es la investigación?, esto es, ¿para qué sirve?</p>
+							
+						</div>
+						<div data-tab="tab2">
+							<img id="img-interrogantes"src="../img/busqueda-social.jpg">
+							<p>¿Cuál es su relevancia para la sociedad?, ¿quiénes se beneficiarán con los
+							resultados de la investigación?, ¿de qué modo? En resumen, ¿qué
+							proyección social tiene?</p>
+
+						</div>
+						<div data-tab="tab3">
+							<p>¿Ayudará a resolver algún problema práctico?, ¿Tiene implicaciones
+								trascendentales para una amplia gama de problemas prácticos?</p>
+						</div>
+						<div data-tab="tab4">
+							<img id="img-interrogantes"src="../img/valor.png">
+							<p>Con la investigación, ¿se logrará llenar algún hueco de conocimiento?,
+							¿se podrán generalizar los resultados a principios más amplios?, ¿la
+							información que se obtenga puede servir para comentar, desarrollar o
+							apoyar una teoría?, ¿se podrá conocer en mayor medida el
+							comportamiento de una o diversas variables o la relación entre ellas?,
+							¿ofrece la posibilidad de una exploración fructífera de algún fenómeno?,
+							¿qué se espera saber con los resultados que no se conociera antes?,
+							¿puede sugerir ideas, recomendaciones o hipótesis a futuros estudios?</p>
+						</div>
+						<div data-tab="tab5">
+							<img id="img-interrogantes"src="../img/idea.jpg">
+							<p>La investigación, ¿puede ayudar a crear un nuevo instrumento para
+							recolectar y/o analizar datos?, ¿ayuda a la definición de un concepto,
+							variable o relación entre variables?, ¿pueden lograrse con ella mejoras de
+							la forma de experimentar con una o más variables?, ¿sugiere cómo
+							estudiar más adecuadamente una población?
+							</p>
+						</div>
+
+						
+					
+
+					</div>
+
+
+			
+				
+				<!--Video de youtube-->
+				</article>
+				<p>-----------</p>
+				<article id="servicio1">
+					
+						<h3>Justificación del tema</h3>
+
+						<center><iframe width="420" height="315" src="https://www.youtube.com/embed/YWGGbLkI_x0" frameborder="0" allowfullscreen></iframe></center>
+				</article>
+				
+				<article id="servicio2">
+					
+						<h3>Justificación</h3>
+
+						<iframe width="420" height="315" src="http://www.powtoon.com/embed/bL1H9HihUcN/" frameborder="0" allowfullscreen></iframe>
+				</article>
+
+	</section>
+<footer><p><b>&copy; Copyright</b> Fabián Durán <br/><br/></p></footer>	
+	</section>
+		
+
+
+	<!--Se invoca desde los servidores de google la librería de Jquery, por eso solo funciona con internet -->
+	
+	<script type="text/javascript" src="../js/n/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="../js/n/plugins.js"></script>	
+
+		
+
+		<script async type="text/javascript">
+				$(document).ready(function(){
+					$("#animacion").hide("slow");
+					$("#animacion").show(1200, function(){
+					//$("#animacion").css("color", "#990000");
+												      });
+											});
+		</script>
+		<!--Animación del menu pequeño de enlace; editor; descarga..-->
+			<script type='text/javascript'>
+				// <![CDATA[
+				$(document).ready(function() {
+				$('a.nudge').hover(function() { //mouse in
+				$(this).animate({ paddingLeft; '45px' }, 400);
+				}, function() { //mouse out
+				$(this).animate({ paddingLeft; '1px' }, 400);
+				});
+				});
+				//]]>
+			</script>
+
+	<script>
+	$(document).ready(function(){
+    $(".ifancybox").fancybox({
+         'width' ; '75%',
+         'height' ; '75%',
+         'autoScale' ; false,
+         'transitionIn' ; 'none',
+         'transitionOut' ; 'none',
+         'type' ; 'iframe'
+     });
+ 		});</script>
+
+<!--...........script del toggle-->
+
+	<script src="../js/jquery.tabby.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#tabby-1').tabby();
+		});
+	</script>
+
+ 		
+ 		
+
+</body>
+<html/>
+
+

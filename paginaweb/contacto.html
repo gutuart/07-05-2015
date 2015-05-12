@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Guide Project Contacto</title>
+	<!--la etiqueta meta se utiliza para agregar información a la página-->
+	<!--el meta charset detemina como se verán ciertos caracateres -->
+	
+	<meta name="description"content="Esta sección contacto es para colocarse en contacto con el desarrollador "/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/><!-- meta especifica. el viewport sirve para que el dispositivo que este visualizando el sitio web lo veo según el ancho del dispositivo -->
+	<link rel="shortcut icon" type="image/x-icon" href="faviconGp.ico"/>
+	<link rcl="author" type="text/plain" href="humans.txt"/>
+	<!-- se recomienda que los plug-in esten antes de cargar la libreria de css-->
+	<link rel="sitemap" type="aplication/xml"title="sitemap" href="sitemap.xml"/>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+	<!--Se invoca desde los servidores de google la librería de Jquery, por eso solo funciona con internet -->
+	<script src="js/JavaScritp.js"></script>
+	
+</head>
+<body>
+<!-- Navigation -->
+  <section id="navigation" class="navbar-fixed-top ">
+    <div class="menu-position">
+      <div class="nav-logo"> 
+        <a href="index.html" class="logo">
+          <img src="img/Titulo.png" class="fade  rotarY"id="maximizar"alt="logo">
+        </a>
+      </div>
+
+      <a class="mini-nav-button"><i class="nav-fa fa fa-bars"></i></a>
+
+      <div class="nav-menu"> 
+    <nav id="menu-principal"><!--es una etiqueta de menú de navegación, o conjunto de enlaces a otras páginas-->
+<ul>
+	<li class="active"><a href="index.html"class="active">Inicio</a><li/>
+	<li><a href="acerca.html">Acerca </a><li/>
+	<li><a href="servicio.html">Proyecto </a><li/>
+	<li><a href="trabajo.html">Trabajos</a><li/>
+	<li><a href="contacto.html">Contacto</a><li/>	
+
+</ul>
+	</nav>	
+      </div>
+    </div>
+  </section>
+<!--la etiqueta section permite trabajar por secciones, es decir por bloques donde se puede colocar un título diferente a cada seccción -->
+<section id="contenido">
+
+	<section id="contacto">
+		<center><h1>Datos del desarrollador</h1></center>
+
+		<article id="info-contacto">
+			
+			<p id="ajustar">
+				Email:
+				<!--Esto le da estilo a los datos de contactos-->
+				<span class="datos-contactos"><a style ="font-family:verdana"href="mailto:tú@tuemail.com">fabianduran@unisangil.edu.co</a></span>
+				<br/>
+				Movil:
+				<span class="datos-contactos">301-777-2355</span>
+				<br/>
+				<!---->	
+			</p>
+		</article>
+		<!-------------------------------------->
+		<article id="contactanos">
+		<iframe src="https://docs.google.com/a/unisangil.edu.co/forms/d/1SxzxghWkSFVo2XBcMA5PblAFnPf9M90mgcs321p1YsQ/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+		</article>
+	</section>	
+	
+		<section id="mapa">
+			<br><br><br><br>
+			<iframe src="https://mapsengine.google.com/map/embed?mid=zGDuMgDrAnLQ.kmWoHB0dnUk4" width="640" height="480"></iframe>
+		</section>
+
+	
+
+</section>
+<footer>Aprendiendo Html5, CSS3, Y RESPONSIVE DESING<A rel="author" HREF="https://www.facebook.com/fabian.duran3" target="_blank"> @fabian</A></footer><!-- publicidad y bot sociales..target="_blank abre el link en otra pestaña-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script>
+		!window.Jquery && document.write("<script src='js/jquery.min.js'><\/script>");
+	</script>
+	<script type="text/javascript" src="js/n/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="js/n/plugins.js"></script>
+</body>
+<html/>
+
+

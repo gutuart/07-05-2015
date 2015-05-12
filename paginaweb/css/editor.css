@@ -1,0 +1,92 @@
+body, 
+#textArea,
+input[type="submit"]{
+	font-family: 'Lato', sans-serif;
+}
+
+input[type="submit"]
+{
+	background-color:#41753C;
+	color:white;
+	font-size:13px;
+	border-radius: 3px;
+	margin: 5px;
+	border-color: #41753C;
+	border-width: 1px;
+	border-style: solid;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover
+{
+	background-color:#96CC9C;
+	color:black;
+	border-color:black;
+}
+
+h1{
+	text-align: center;
+	color: #41753C;
+}
+label
+{
+	cursor: pointer;
+}
+textarea:focus
+{
+	background: #F0FAFF;
+}
+#divBoton
+{
+	display:none;
+	text-align: right;
+	background-color: #7AB15C;
+}
+
+#contenedor{
+	margin: 0 auto;
+	width: 500px;
+}
+
+#textArea
+{
+
+	width:100%; 
+	height:100px;
+	font-size:15px;
+}
+#nebaris{
+	background-color: #333;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	margin-top: 120px;
+}
+
+#nebaris a{
+  	color:rgb(178, 255, 178);
+}
+
+#nebaris a:hover{
+  	color:white;
+}
+
+#contenido{
+	color: #41753C;
+}
+.textAreaActivo{
+	border:solid 2px #7AB15C;
+}
+
+.textAreaInactivo{
+	border:solid 1px #CCC;
+}
+.cambio
+{
+	-ms-transition: all 2.5s ease-out;
+	-moz-transition: all 2.5s ease-out;
+	-o-transition: all 2.5s ease-out;
+	-webkit-transition: all 2.5s ease-out;
+	transition: all 2.5s ease-out;
+}
+

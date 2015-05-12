@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Guide Project </title>
+	<!--la etiqueta meta se utiliza para agregar información a la página-->
+	<!--el meta charset detemina como se verán ciertos caracateres -->
+	
+	<meta name="description"content="Bienvenido a mi p&aacute;ginota"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/><!-- meta especifica. el viewport sirve para que el dispositivo que este visualizando el sitio web lo veo según el ancho del dispositivo -->
+	<link rel="shortcut icon" type="image/x-icon" href="../faviconGp.ico"/>
+	<link rcl="author" type="text/plain" href="../humans.txt"/>
+	<link rel="sitemap" type="aplication/xml"title="sitemap" href="sitemap.xml">
+	<!-- se recomienda que los plug-in esten antes de cargar la libreria de css-->
+	
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+
+	<!-- menu animado jquery-->
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
+		<script src="../js/modernizr.custom.js"></script>
+
+	<!--css de las transiciones de la página-->
+	<link rel="stylesheet" type="text/css" href="../metodologia-css/demo.css" />
+	<link rel="stylesheet" type="text/css" href="../metodologia-css/style2.css"/>
+
+	<!--fancybox-->
+	<link rel="stylesheet" href="../css/jquery.fancybox.css" media="screen" />
+	
+	<!--Se invoca desde los servidores de google la librería de Jquery, por eso solo funciona con internet -->
+	
+
+</head>
+<body>
+<!-- Navigation -->
+  <section id="navigation" class="navbar-fixed-top ">
+    <div class="menu-position">
+      <div class="nav-logo"> 
+        <a href="../index.html" class="logo">
+          <img src="../img/Titulo.png" class="rotarY"id="maximizar"alt="logo">
+        </a>
+      </div>
+
+      <a class="mini-nav-button"><i class="nav-fa fa fa-bars"></i></a>
+
+      <div class="nav-menu"> 
+    <nav id="menu-principal"><!--es una etiqueta de menú de navegación, o conjunto de enlaces a otras páginas-->
+<ul>
+	<li class="active"><a href="index.html"class="active">Inicio</a><li/>
+	<li><a href="../acerca.html">Acerca </a><li/>
+	<li><a href="../servicio.html">Proyecto </a><li/>
+	<li><a href="../trabajo.html">Trabajos</a><li/>
+	<li><a href="../contacto.html">Contacto</a><li/>	
+
+</ul>
+	</nav>	
+      </div>
+    </div>
+  </section>
+<!--la etiqueta section permite trabajar por secciones, es decir por bloques donde se puede colocar un título diferente a cada seccción -->
+<section id="contenido">
+
+	<div class="main clearfix">
+				
+				<div class="column">
+					<div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+					<ul class="dl-menu">
+							<li>
+								<a href="planteamiento.html">1.Descripción del Problema</a>
+								
+							</li>
+							<li>
+								<a href="justificacion.html">2.Justificación</a>
+								<!--<ul class="dl-submenu">
+									<li><a href="#">Camera &amp; Photo</a></li>
+									<li><a href="#">TV &amp; tipo Cinema</a></li>
+									<li><a href="#">Phones</a></li>
+									<li><a href="#">PC &amp; Video Games</a></li>
+								</ul>-->
+							</li>
+							<li>
+								<a href="#">3.Objetivos</a>
+								<ul class="dl-submenu">
+									<li>
+										<a href="objetivos.html">3.1 Objetivo general</a>
+									</li>	
+									<li>
+										<a href="objetivos.html#especificos">3.2 Objetivo específico</a>
+									</li>
+								
+								</ul>
+							</li>
+							<li>
+								<a href="antecedentes.html">4.Antecedentes</a>
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="referente-teorico.html">5.Marco de referencia</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="Metodologia.html">6.Metodología</a>
+								<ul class="dl-submenu">
+									<li>
+										<a href="Metodologia.html#tipo">Tipo de investigación</a>
+									</li>	
+									<li>
+										<a href="Metodologia.html#localizacion"> Localización</a>
+									</li>
+									<li>
+										<a href="Metodologia.html#variables">Variables e indicadores</a>
+									</li>
+									<li>
+										<a href="Metodologia.html#muestra">Población y muestra</a>
+									</li>
+									<li>
+										<a href="Metodologia.html#tecnicas">Tecnicas de recolección</a>
+									</li>
+									<li>
+										<a href="Metodologia.html#muestra">Esquema metodologico</a>
+									</li>
+								
+								</ul>
+							</li>
+
+							<!--bloque-->
+							<li>
+								<a href="esquema.html">7.Esquema temático</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="presupuesto.html">8.Presupuesto</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="cronograma.html">9.Cronograma</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="bibliografia">10.Bibliografía</a>
+								
+							</li>
+
+						</ul>
+					</div><!-- /dl-menuwrapper -->
+				</div>
+			</div>
+			
+				 <!--menú pequeño donde va el editor-->
+				 
+				 <nav id="menu-peque">
+			
+					<li><a class="nudge" href="../Text-Editor/demo.html" target="_blank">Editar</a><li/>
+					<a class="nudge" href="../Formato.doc" download="Formato Guia">Descargar Formato</a><br/>
+					<!--<a class="nudge" href="#">Agregar evento</a>-->
+					
+					<a class="ifancybox nudge" href="http://localhost/paginaweb/calendario/">Agregar evento</a>
+			
+			</nav>
+		
+		
+		<!-- /muestra -->
+
+		<!-- Header with Navigation -->
+		<article id="servicio1-metodologia">
+			<h3 style="font-size:20px;font-family:verdana"><STRONG>METODOLOGÍA</STRONG></h3><BR/>
+		<div id="header">
+			
+			<ul id="navigation-2">
+				<li><a id="link-tipo" href="#tipo">Tipo de investigación</a></li>
+				<li><a id="link-localizacion" href="#localizacion">Localización</a></li>
+				<li><a id="link-variables" href="#variables">Variables </a></li>
+				<li><a id="link-muestra" href="#muestra">Población y muestra</a></li>
+				<li><a id="link-tecnicas" href="#tecnicas">Tecnicas e instrumentos</a></li>
+				<li><a id="link-esquema" href="#esquema">Esquema metodológico</a></li>
+			</ul>
+			
+		</div>
+
+</article>
+<article id="servicio2-metodologia">
+		<!-- tipo -->
+		<div id="tipo" class="panel">			
+			<div class="content">
+				<h2>Tipos de investigación</h2>
+				<h3 style="font-size:30px">Descriptiva</h3><br/>
+					<p>Se concreta en describir las características fundamentales, destacando elementos esenciales que caracterizan el fenómeno estudiado.
+					<br/>
+					Su objetivo es referir e interpretar minuciosamente lo observado, describir el estado, las características, factores y procedimientos del objeto estudiado.<br/><br/>
+					Ejemplos:<br/>
+                      • Análisis de la población estudiantil universitaria.<br/>
+                      • Censos Nacionales.
+					</p><hr/>
+				<h3 style="font-size:30px">Exploratoria</h3><br/>
+					<p>Examinar un tema o problema de investigación poco estudiado o que no ha sido observado antes. por lo que sus resultados constituyen una visión aproximada de dicho objeto. <br/><br/>
+					Ejemplos:<br/>
+					• Las primeras investigaciones acerca del SIDA. Por ser una nueva enfermedad, no se conocían sus causas ni formas de transmisión.<br/>
+					•Estudios sobre Realidad Virtual.
+					</p><hr/>
+				<h3 style="font-size:30px">Explicativa</h3><br/>
+					<p>Se encarga de buscar el por qué de los hechos
+						mediante el establecimiento de relaciones causa-efecto.<br/><br/>
+						Ejemplos:<br/>
+						• Indagación de las causas que generan la corrupción.<br/>
+						• Estudio de los efectos de una estrategia de enseñanza sobre el rendimiento
+						estudiantil.
+					</p><hr/>
+				<h3 style="font-size:30px">Documental</h3><br/>
+					<p>Es aquella que se basa en la obtención y
+						análisis de datos provenientes de materiales impresos u otros tipos de documentos.<br/><br/>
+						Ejemplo:<br/>
+						•Estudio sobre la historia del Computador, realizado mediante la consulta de material bibliográfico y hemerográfico.
+					</p><hr/>
+				<h3 style="font-size:30px">Correlacional</h3><br/>
+					<p>Mide el grado de relación que existe entre dos o más conceptos o variables.
+						Cómo se vinculan diversos fenómenos entre sí o sino  se relacionan.<br/><br/>
+						Ejemplo:<br/>
+						•En un grupo de trabajadores, identificar el grado de satisfacción con el trabajo en relación con el nivel educativo, ingreso salarial, condiciones del trabajo y número de hijos.
+
+					</p>
+				
+			</div>
+		</div>
+		<!-- /tipo -->
+		
+		<!-- localizacion -->
+		<div id="localizacion" class="panel">
+			<div class="content">
+				<h2>Localización</h2>
+				
+				
+					<center><img class="estilo-img"src="../img/locali.png" width="250"></center>
+					<br/>
+					<p>Donde se va a desarrollar el proyecto.<br/>Grupo, institución, comunidad, vereda, municipio, empresa, sector, población etc. Incluye la descripción del lugar haciendo énfasis  en los aspectos que mayormente tienen que ver con el problema de la investigación.
+					</p>
+				
+				
+			</div>
+		</div>
+		<!-- /localizacion -->
+		
+		<!-- variables -->
+		<div id="variables" class="panel">
+			<div class="content">
+				<h2>Variables e indicadores</h2>
+				<h3 style="font-size:30px">Variables</h3><br/>
+				<p>Las variables son los elementos que se van a medir, controlar y estudiar dentro del problema formulado  y se pueden cuantificar. Se dan en términos de conceptos.</p>
+
+				<p> • Conocer sus dimensiones<br/>
+ 					• Planteada con el problema<br/>
+ 					• Relación directa con los objetivos formulados
+				</p>
+
+				<h3 style="font-size:30px">Indicadores</h3><br/>
+				<p>Precisan la información, la cuantifican, la detallan y conducen al conocimiento real y exacto de la información, para luego tabular y extraer conclusiones.
+				</p>
+				<h2>Ejemplo</h2>
+				
+				<a rel="trabajos" class="fade" href="../img/variables.png" title="Ejemplo">
+					<!--aca va la imagen pequeña-->
+					<center><img class="redonda"src="../img/variables.png"width="250"></center>
+				</a>
+			</div>
+		</div>
+		<!-- /variables -->
+		
+		<!-- muestra -->
+		<div id="muestra" class="panel">
+			<div class="content">
+				<h2>Población y Muestra</h2>
+				<h3 style="font-size:30px">Población</h3>
+				<p>Es la totalidad de los elementos  a estudiar las cuales concuerdan en una serie de características factibles de procesar dando origen a los datos de la investigación. También se le suele llamar universo por cuanto abarca a todos entes sujetos del estudio.
+				</p><hr/>
+				<h3 style="font-size:30px">Muestra</h3>
+				<p>Es un subgrupo o parte de la población seleccionada y de la cual realmente se obtiene información para el desarrollo del estudio y sobre el cual se efectuará la medición y observación de las variables objeto de estudio.
+				</p><br/>
+					<center><img class="estilo-img"src="../img/muestra.png" width="250"></center>
+				<p>La muestra debe ser representativa, reúne las características principales de la población, se debe tener en cuenta el sistema de muestreo utilizado y el tamaño de la muestra.</p>
+				<br/><br/>
+
+				<a rel="trabajos" class="ifancybox" href="cal-muestra.html" >
+					<!--aca va la imagen pequeña-->
+					<p id="boton-3d">Calcular la muestra</p>
+				</a>
+					
+				<hr/>
+
+				<h3 style="font-size:30px">Técnicas de recolección de daTos</h3>
+				<center><p>Se describen los procedimientos que utilizará:<br/><br/>
+
+ 					• Encuesta  a población<br/>
+ 					• Entrevista a profundidad<br/>
+ 					• Observación (directa, indirecta, participante)<br/>
+ 					• Dinámica de grupos focales
+				</p></center>
+				<h3 style="font-size:30px">Instrumentos de recolección de daTos</h3>
+				<center><p>Como se ordena y presenta de la forma más lógica los resultados obtenidos.
+				<br/><br/>
+
+ 					• Registro: Frecuencia hecho
+					<br/>
+ 					• Clasificación: Distribuye y agrupa
+					<br/>
+ 					• Codificación: Transforma datos en símbolos 
+                      numéricos
+					<br/>
+ 					• Tabulación: Recuento de datos en categorías
+
+				</p></center>
+				<hr/>
+				<h3 style="font-size:30px">Videos</h3>
+				<br/>
+				<ul>
+					
+					<li><a class="video" href="http://www.youtube.com/embed/dOnHe83CF68"title="Población y muestra">
+					<img class="redonda"src="../img/poblacion.png" width="250">
+						</a></li>
+
+					<br/><br/>
+					<li><a class="video"  href="http://www.youtube.com/embed/JKjZLElIUrA"title="Calcular la muestra">
+					<img class="redonda"src="../img/formula.jpg" width="250">
+						</a></li>
+				</ul>
+			</div>
+		</div>
+		<!-- /muestra -->
+		<div id="tecnicas" class="panel">
+			<div class="content">
+				<h2>Tecnica</h2>
+
+				<p><img class="img-texto"src="../img/encuesta.png">Medio a través del cual se establece la relación entre el investigador y el consultado para la recolección de datos, por ejemplo las entrevistas, encuestas y la observación <a href="http://www.sld.cu/galerias/pdf/sitios/bmn/metodologia_de_la_investigacion.diseno_teorico_y_formulacion_proyecto_investigacion.pdf"><cite>(González, Levín & Curiel, 2003).</cite></a></p>
+
+				<h2>Instrumento</h2>
+				<p>
+					es el mecanismo que utiliza el investigador para recolectar y registrar la información, por ejemplo los formularios, las listas, etc <a href="http://www.sld.cu/galerias/pdf/sitios/bmn/metodologia_de_la_investigacion.diseno_teorico_y_formulacion_proyecto_investigacion.pdf"><cite>(González, Levín & Curiel, 2003).</cite></a></p>
+				</p>
+				<h2>Tecnicas de rescolección de datos</h2>
+				
+				<p>Se explica el procedimiento, lugar y condiciones de la recolección de datos. Esta sección es la expresión operativa del diseño de investigación, la especificación concreta de cómo se hará la investigación. Se incluye aquí: <br><br> a) si la investigación será a base de lecturas, entrevistas, encuestas, análisis de documentos u observación directa de los hechos;<br> b) los pasos que se darán<br>  c) las instrucciones para quien habrá de recoger los datos<br> <a href="http://www.redalyc.org/pdf/659/65926549008.pdf"target="_blank">(Morles,2011).</a>
+				</p><hr>
+
+				<h3 style="font-size:30px">Instrumentos de recolección de datos</h3>
+				</h3><br>				
+				<p>Como se ordena y presenta de la forma más lógica los resultados obtenidos.<br><br>
+
+
+				*  Registro: Frecuencia hecho
+ 				<br>*  Clasificación: Distribuye y agrupa
+ 				<br>*  Codificación: Transforma datos en símbolos 
+                      numéricos<br>
+ 				*  Tabulación: Recuento de datos en categorías
+				</p>
+				
+			</div>
+		</div>
+		<!-- /muestra -->
+		<div id="esquema" class="panel">
+			<div class="content">
+				<h2>Esquema metodógico</h2>
+				<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her tipotown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+				<p>Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy.</p>
+				<form id="form">
+					<p><label>Your Name</label><input type="text" /></p>
+					<p><label>Your Email</label><input type="text" /></p>
+					<p><label>Your Message</label><textarea></textarea></p>
+				</form>
+			</div>
+		</div>
+
+		
+		
+		</article>	
+		
+
+
+<footer><p><b>&copy; Copyright</b> Fabián Durán <br/><br/></p></footer><!-- publicidad y bot sociales..target="_blank abre el link en otra pestaña-->
+		
+</section>
+<!--......................................SCRIPT............................-->
+<!--......................................SCRIPT............................-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><!--este link actualiza automaticamente las versiones de jquery-->
+
+	<!--este comando carga jquery cuando el dispositivo no es ta conectado a internet..->como la barra es un caracter especial en javaScript hay que comentarla para que la considere como candena de texto,entonces hay que escaparla contra la barra <\/script>");.(video 8) -->
+	<script>
+		!window.Jquery && document.write("<script src='../js/jquery.min.js'><\/script>");
+	</script>
+
+	<script src="../js/jquery.fancybox.js"></script>
+	<script src="../js/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<script src="../js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-3', classout : 'dl-animate-out-3' }
+				});
+			});
+		</script>
+	
+	<!--Animación del menÚ pequeño de enlace; editor; descarga..-->
+			<script type='text/javascript'>
+				// <![CDATA[
+				$(document).ready(function() {
+				$('a.nudge').hover(function() { //mouse in
+				$(this).animate({ paddingLeft: '45px' }, 400);
+				}, function() { //mouse out
+				$(this).animate({ paddingLeft: '1px' }, 400);
+				});
+				});
+				//]]>
+			</script>
+
+			
+		<script>
+	/*Al documento le voy a prender el evento ready*/
+		$(document).on("ready",function(){
+			/*cunado se inicia con $ es por que es jquery*/
+			$(".fade").fancybox();
+		});
+	</script>
+	<!--iframe fancybox-->
+	<script>
+	$(document).ready(function(){
+    $(".ifancybox").fancybox({
+         'width' : '75%',
+         'height' : '75%',
+         'autoScale' : false,
+         'transitionIn' : 'none',
+         'transitionOut' : 'none',
+         'type' : 'iframe'
+     });
+ 		});</script>
+ 	<!--abre video en fancybox-->
+	<script type="text/javascript">  
+	$(document).ready(function(){  
+    $(".video").fancybox({  
+        'autoScale'     : false,  
+        'transitionIn'      : 'none',  
+        'transitionOut'     : 'none',  
+        'width'         : 680,  
+        'height'        : 450,  
+        'type'          : 'iframe'  
+   		 });  
+	});  
+</script>  
+
+</body>
+<html/>
+
+

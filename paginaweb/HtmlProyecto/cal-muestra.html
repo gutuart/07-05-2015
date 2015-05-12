@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8"/>
+	<title></title>
+	<meta name="viewport" content="width=device-width,inicial-scale=1, maximun-scale1"/>
+	<meta name="description" content="primeros pasos JavaScript"/>
+	<link rel="stylesheet" type="text/css" href="../css/cal-muestra.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript">
+
+	function muestra()
+	{
+		//obtengo los valores del form
+
+		var form= document.getElementById('cal-muestra');
+		// este es el valor del resultado de los calculos
+		var out1= form.elements["result1"];
+		
+
+		// obtengo la salida, el número digitado por el usuario
+		var poblacion= parseInt(form.elements["cant-poblacion"].value);
+		//obtendo el valor del select o selección que haga el usuario
+		var opcion1= parseFloat(form.elements["op1"].value);
+		var opcion2= parseFloat(form.elements["op2"].value);
+		/*
+		n= k^2*0.25
+		   --------
+		   e^2+(N-1)+k^2*0.25
+			*/
+		var k= parseFloat(Math.pow(opcion2,2));
+		var e= parseFloat(Math.pow(opcion1,2));
+		var N= poblacion;
+		var pq= parseFloat(25/100);
+		
+		var ah= parseFloat(k*N*pq);
+
+		var n = parseFloat(e*(N-1)+(k*pq));
+		
+		var prueba= parseFloat(ah/n);
+
+		out1.value= Math.round(prueba);
+		//alert ("haaa0"+n);
+
+	}
+
+	</script>
+	
+</head>
+<body>
+	
+	<article id="contenedor">
+		
+	<div id="divider"> </div>	
+		<form id="cal-muestra">
+		<!--Marguen de error-->
+	<fieldset>
+		<select name="op1" >
+			<option value="0.02">2%</option>
+			<option value="0.025">2.5%</option>
+			<option value="0.03">3%</option>
+			<option value="0.04">4%</option>
+			<option value="0.05">5%</option>
+			<option value="0.1">10%</option>
+		</select >
+		<label ><b>Marguen de error</b><br/><p>Menor margen de error requiere mayores muestras. Lo habitual es 3%</p></label>
+		<br/>
+		
+		<!--Nivel de confianza-->
+		<select name="op2" >
+			<option value="2.57">99%</option>
+			<option value="1.96">95%</option>
+			<option value="1.64">90%</option>
+		</select>
+		<label ><b>Nivel de confianza</b><br/><p>Cuanto mayor sea el nivel de confianza, mayor tendrá que ser la muestra. Lo habitual suele ser entre el 95% y el 99%.</p></label>
+		<br/>
+		<label for="cant"id="error"><b>Población</b></label>
+
+		<input id="cant"type="number"name="cant-poblacion"placeholder="Cantidad "title="Cantidad total de población"required/><span class="red">*</span> 
+		<br/><br/>
+		<center><label><b>Total de la muestra: </b></label>
+		<output id="resultado"name="result1"for="can-tpoblacion">0</output></center>
+	</fieldset>
+		</form>
+
+		<br/>
+		<input type="image" src="../img/boton-calcular.png" onclick="muestra()"value="Calcular">
+			
+		</article>
+</body>
+</html>

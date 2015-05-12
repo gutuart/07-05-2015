@@ -1,0 +1,22 @@
+<<<<<<<< estos dos archivos pertenecen al menú dinamico que esta en la parte de propuesta<<<<<<<<<<<<
+component.css
+default.css
+
+-------------------------------------
+estilos.css
+
+<<<<<<<<< es la hoja de estilo en general de todo
+
+------------------------------------
+flexslider.css
+
+<<<<<<<<<<<<archivo que se aplica para las transiciones de las fotos en el index
+
+--------------------------------------------
+jquery.fancybox.csss
+
+<<<<<<<<<<<<<<Archivo de la parte de trabajos, tambieén muestra una serie de fotos estilo de face
+--------------------------------
+tabby.css
+
+son los estilos del toggle que esta en justificaión

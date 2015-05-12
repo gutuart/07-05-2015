@@ -1,0 +1,39 @@
+JavaScritp
+
+<<<<<<<<<<<Es el general de la página<<<<<<<<<
+------------------------------
+jquery.fancybox
+
+<<<<<<Js de la parte de las imagenes tipo face<<<<<<<<
+
+-----------------------
+jquery.min
+
+<<<<<<<<<<<jquery general<<<<<<<<
+
+---------------------------------
+jquery.mousewheel-3.0.6.pack
+
+<<<<<<<<<pertenece al fancybox, permite que el usuario con la rueda del mouse se desplace por la fotos
+
+--------------------------------------
+jquery.dlmenu
+modernizr.custom
+
+<<<<<<Este es script es del menú que esta en la parte de propuesta, acá se muestra la estructura de desarrollo de un proyecto<<<<<<<<
+
+-----------------------
+tesdata.js
+
+Script para el calendario que esta en la página de incio
+-----------------------------
+jquery.tabby.min
+
+script para el toggle() que esta en justificación
+---------------------
+
+bootstrap.min
+
+este script me habilita la funciíon del menú del rwd
+---------------------
+

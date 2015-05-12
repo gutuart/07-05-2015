@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Guide Project </title>
+	<!--la etiqueta meta se utiliza para agregar información a la página-->
+	<!--el meta charset detemina como se verán ciertos caracateres -->
+	
+	<meta name="description"content="Bienvenido a mi p&aacute;ginota"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/><!-- meta especifica. el viewport sirve para que el dispositivo que este visualizando el sitio web lo veo según el ancho del dispositivo -->
+	<link rel="shortcut icon" type="image/x-icon" href="../faviconGp.ico"/>
+	<link rcl="author" type="text/plain" href="../humans.txt"/>
+	<link rel="sitemap" type="aplication/xml"title="sitemap" href="sitemap.xml">
+	<!-- se recomienda que los plug-in esten antes de cargar la libreria de css-->
+	
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+	<link rel="stylesheet" href="../css/jquery.fancybox.css"/>
+	<!-- menu animado jquery-->
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+		<link rel="stylesheet" type="text/css" href="../css/component.css" />
+		<script src="../js/modernizr.custom.js"></script>
+	
+	<!--fancybox-->
+	<link rel="stylesheet" href="../css/jquery.fancybox.css" media="screen" />
+	
+	<!--Se invoca desde los servidores de google la librería de Jquery, por eso solo funciona con internet -->
+	
+
+</head>
+<body>
+<!-- Navigation -->
+  <section id="navigation" class="navbar-fixed-top ">
+    <div class="menu-position">
+      <div class="nav-logo"> 
+        <a href="index.html" class="logo">
+          <img src="../img/Titulo.png" class="fade  rotarY"id="maximizar"alt="logo">
+        </a>
+      </div>
+
+      <a class="mini-nav-button"><i class="nav-fa fa fa-bars"></i></a>
+
+      <div class="nav-menu"> 
+    <nav id="menu-principal"><!--es una etiqueta de menú de navegación, o conjunto de enlaces a otras páginas-->
+<ul>
+	<li class="active"><a href="../index.html"class="active">Inicio</a><li/>
+	<li><a href="../acerca.html">Acerca </a><li/>
+	<li><a href="../servicio.html">Proyecto </a><li/>
+	<li><a href="../trabajo.html">Trabajos</a><li/>
+	<li><a href="../contacto.html">Contacto</a><li/>	
+
+</ul>
+	</nav>	
+      </div>
+    </div>
+  </section>
+<!--la etiqueta section permite trabajar por secciones, es decir por bloques donde se puede colocar un título diferente a cada seccción -->
+<section id="contenido">
+
+	<div class="main clearfix">
+				
+				<div class="column">
+					<div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+					<ul class="dl-menu">
+							<li>
+								<a href="planteamiento.html">1.Descripción del Problema</a>
+								
+							</li>
+							<li>
+								<a href="justificacion.html">2.Justificación</a>
+								<!--<ul class="dl-submenu">
+									<li><a href="#">Camera &amp; Photo</a></li>
+									<li><a href="#">TV &amp; tipo Cinema</a></li>
+									<li><a href="#">Phones</a></li>
+									<li><a href="#">PC &amp; Video Games</a></li>
+								</ul>-->
+							</li>
+							<li>
+								<a href="#">3.Objetivos</a>
+								<ul class="dl-submenu">
+									<li>
+										<a href="objetivos.html">3.1 Objetivo general</a>
+									</li>	
+									<li>
+										<a href="objetivos.html#especificos">3.2 Objetivo específico</a>
+									</li>
+								
+								</ul>
+							</li>
+							<li>
+								<a href="antecedentes.html">4.Antecedentes</a>
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="#">5.Marco de referencia</a>
+								<ul class="dl-submenu">
+									<li>
+										<a href="marcoreferencia#teorico">5.1 Marco teórico</a>
+									</li>
+									<li>
+										<a href="marcoreferencia#conceptual">5.2 Conceptual</a>
+									</li>
+									<li>
+										<a href="marcoreferencia#historico">5.3 Historico</a>
+									</li>
+									<li>
+										<a href="marcoreferencia#estado">5.4 Estado actual</a>
+									</li>
+									<li>
+										<a href="marcoreferencia#politico">5.5 Politico & legal</a>
+									</li>
+									
+									<li>
+										<a href="marcoreferencia#tecnologico">5.6 Tecnologico</a>
+									</li>
+								
+								</ul>
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="Metodologia.html">6.Metodología</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="esquema.html">7.Esquema temático</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="presupuesto.html">8.Presupuesto</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="cronograma.html">9.Cronograma</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="bibliografia">10.Bibliografía</a>
+								
+							</li>
+
+						</ul>
+					</div><!-- /dl-menuwrapper -->
+				</div>
+			</div>
+			
+				 <!--menú pequeño donde va el editor-->
+				 
+				 <nav id="menu-peque">
+			
+					<li><a class="nudge" href="../Text-Editor/demo.html" target="_blank">Editar</a><li/>
+					<a class="nudge" href="../Formato.doc" download="Formato Guia">Descargar Formato</a><br/>
+					<!--<a class="nudge" href="#">Agregar evento</a>-->
+					
+					<a class="ifancybox nudge" href="http://localhost/paginaweb/calendario/">Agregar evento</a>
+			
+			</nav>
+	
+		<!-- contenedores-->
+
+<article id="servicio1-objetivos">
+
+ <div id="texto1">Videos de apoyo<span id="forma1"></span></div>
+			
+<center><iframe width="420" height="315" src="http://www.youtube.com/embed/PxJ9qDHYMj8" 			frameborder="0" allowfullscreen alt="menu">
+	   </iframe>
+	 
+</center>
+		<br/>
+		<center><iframe width="420" height="315" src="http://www.youtube.com/embed/wjxsYoutb6k" frameborder="0" allowfullscreen>video no disponible</iframe></center>
+
+</article>
+<article id="servicio2-objetivos">
+		
+			<p id="problema"style="font-size:50px">OBJETIVOS</p><br/>
+<p style="font-family:pecita">(máximo 500 palabras)</p>
+<h3>Concepto</h3>
+<p>Se refiere a los propósitos por los cuales se hace la investigación. Nos permiten dejar en claro cuales van hacer los alcances del proyecto</p>
+<hr/>
+<h1>Preguntas a la que debe responder la formulación de objetivos</h1>
+
+<ul class="lista">
+	<li>¿Qué quiero hacer en la investigación? </li>
+	<li>¿Qué es lo que busco conocer? </li>
+	<li>¿A dónde quiero llegar? </li>
+</ul>
+<p><a href="http://dspace.universia.net/bitstream/2024/187/1/Tema1+El+Problema-DIB.pdf"target="blank"><cite>(Balliache, s.f)</cite>.</a></p>
+
+		<h3 >Objetivo general</h3>
+		
+		<div id="especificos">
+			<p>Los objetivos de investigación son metas que se traza el investigador en relación
+				con los aspectos que desea indagar y conocer. Estos expresan un resultado o "producto de la labor investigativa." <cite>(Ramírez 1996, p. 61)</cite>.</p>
+				<br/>
+			<p>Deben mostrar una relación clara y consistente con la descripción del problema y, específicamente, con las preguntas o hipótesis que se quieren resolver. Se recomienda formular un solo objetivo general, coherente con el problema planteado <a href="http://www.autonoma.edu.co/media/documentos-investigacion/03-GUIA-PRESENTACION-PROYECTOS-2006.pdf"target="blank"> <cite>(Colciencias,2006)</cite>.</a></p><br/>
+			<p id="comentario">El objetivo general debe llevar <b>EL QUE</b> VA HACER,  <b>COMO</b> Y EL <b>PARA QUE</b> LO HARÁ</p>
+
+	<section id="trabajos">
+		<div class="portafolio">
+			
+			<article>
+				
+			<!-- espacio para el Fancybox clase fade-->
+			<a class="fade" href="../img/objetivos1.png"title="Pasos para formular los objetivos">
+					<!--aca va la imagen pequeña-->
+					<img class="redonda"src="../img/objetivos1-mini.png">
+					
+				</a>
+			</article>
+			<figcaption class="titulo-img">Formulación de objetivos</figcaption>
+			<article>
+				
+			<!-- espacio para el Fancybox clase fade-->
+			<a class="fade" href="../img/objetivos-lista.png"title="Lista de verbos que se pueden usar en los objetivos">
+					<!--aca va la imagen pequeña-->
+					<img class="redonda"src="../img/objetivos-lista.mini.png">
+					
+				</a>
+			</article>
+			<figcaption class="titulo-img">Verbos que se usan</figcaption>	
+		</div>
+		<p><a href="http://dspace.universia.net/bitstream/2024/187/1/Tema1+El+Problema-DIB.pdf"target="blank"><cite>(Balliache, s.f)</cite>.</a></p>
+		<p id="comentario">CLICK EN LA IMAGEN</p>
+		</section>
+			<h3>Objetivos específicos</h3><br/>
+
+			<p>Los objetivos específicos son los resultados y beneficios cuantificables esperados cuando se lleva a cabo una estrategia. Responden a la pregunta: Qué va a lograr cada Estrategia?<br/>
+
+				Deben cumplir los siguientes requisitos:<br/><br/>
+
+				· Medibles, que permitan su seguimiento y evaluación.<br/>
+				· Apropiados, a los problemas, objetivos generales y estrategias.<br/>
+				· Temporales, con un período de tiempo específico para alcanzarlos.<br/>
+				· Específicos, para evitar diferentes interpretaciones.<br/>
+				· Realistas, es decir, alcanzables, con sentido, desafiantes.</p>
+		</p>	
+
+		</div>
+		</article>	
+<footer><p><b>&copy; Copyright</b> Fabián Durán <br/><br/></p></footer>
+	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script><!--este link actualiza automaticamente las versiones de jquery-->
+
+	<!--este comando carga jquery cuando el dispositivo no es ta conectado a internet..->como la barra es un caracter especial en javaScript hay que comentarla para que la considere como candena de texto,entonces hay que escaparla contra la barra <\/script>");.(video 8) -->
+	<script>
+		!window.Jquery && document.write("<script src='../js/jquery.min.js'><\/script>");
+	</script>
+	<script src="../js/jquery.fancybox.js"></script>
+	<script src="../js/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script src="../js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-3', classout : 'dl-animate-out-3' }
+				});
+			});
+		</script>
+
+	<!--Animación del menu pequeño de enlace; editor; descarga..-->
+			<script type='text/javascript'>
+				// <![CDATA[
+				$(document).ready(function() {
+				$('a.nudge').hover(function() { //mouse in
+				$(this).animate({ paddingLeft: '45px' }, 400);
+				}, function() { //mouse out
+				$(this).animate({ paddingLeft: '1px' }, 400);
+				});
+				});
+				//]]>
+			</script>
+		
+		<script>
+	/*Al documento le voy a prender el evento ready*/
+		$(document).on("ready",function(){
+			/*cunado se inicia con $ es por que es jquery*/
+			$(".fade").fancybox();
+		});
+	</script>
+<script type="text/javascript" src="js/n/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="js/n/plugins.js"></script>	
+	<script>
+	$(document).ready(function(){
+    $(".ifancybox").fancybox({
+         'width' : '75%',
+         'height' : '75%',
+         'autoScale' : false,
+         'transitionIn' : 'none',
+         'transitionOut' : 'none',
+         'type' : 'iframe'
+     });
+ 		});</script>
+ 	<!--abre video en fancybox-->
+	<script type="text/javascript">  
+	$(document).ready(function(){  
+    $(".video").fancybox({  
+        'autoScale'     : false,  
+        'transitionIn'      : 'none',  
+        'transitionOut'     : 'none',  
+        'width'         : 680,  
+        'height'        : 450,  
+        'type'          : 'iframe'  
+   		 });  
+	});  
+</script>  
+
+</body>
+<html/>
+
+

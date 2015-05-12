@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Guide Project </title>
+	<!--la etiqueta meta se utiliza para agregar información a la página-->
+	<!--el meta charset detemina como se verán ciertos caracateres -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="keywords" content="multi-level menu, mobile menu, responsive, space-saving, drop-down menu, css, jquery" />
+	<meta name="description"content="En esta secci&oacute;n se encuentran los aspectos preliminares de un proyecto de investigaci&acute;on"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/><!-- meta especifica. el viewport sirve para que el dispositivo que este visualizando el sitio web lo veo según el ancho del dispositivo -->
+	<link rel="shortcut icon" type="image/x-icon" href="../faviconGp.ico"/>
+	<link rcl="author" type="text/plain" href="humans.txt"/>
+	<!-- se recomienda que los plug-in esten antes de cargar la libreria de css-->
+	<link rel="sitemap" type="aplication/xml"title="sitemap" href="sitemap.xml"/>
+	<link rel="stylesheet" type="text/css" href="../css/estilos.css"/>
+	<!--pertenece al menú-->
+	<link rel="stylesheet" type="text/css" href="../css/default.css" />
+	<link rel="stylesheet" type="text/css" href="../css/component.css" />
+	<link rel="stylesheet" href="../css/jquery.fancybox.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+	</script>
+	<script>
+		!window.Jquery && document.write("<script src='../js/jquery.min.js'><\/script>");
+	</script>
+	<script src="../js/jquery.flexslider.js"></script>
+	<!-- este script ejecuta el flexslider, se crea un objeto window. este analiza hasta que window a cargado y ejecuta la función-->
+	<!-- $('.flexslider').flexslider(); los puntos indican que es una clase de html por eso .flexslider..este comando busca en el elemento que tenga la clase flexslider que en este caso es <div>de flexslider y ejecuta el metódo -->
+	<script>
+		$(window).on("load",function() {
+			
+			$('.flexslider').flexslider();
+		});
+	</script>
+</head>
+<body>
+<!-- Navigation -->
+  <section id="navigation" class="navbar-fixed-top ">
+    <div class="menu-position">
+      <div class="nav-logo"> 
+        <a href="index.html" class="logo">
+          <img src="../img/Titulo.png" class="fade  rotarY"id="maximizar"alt="logo">
+        </a>
+      </div>
+
+      <a class="mini-nav-button"><i class="nav-fa fa fa-bars"></i></a>
+
+      <div class="nav-menu"> 
+    <nav id="menu-principal"><!--es una etiqueta de menú de navegación, o conjunto de enlaces a otras páginas-->
+<ul>
+	<li class="active"><a href="../index.html"class="active">Inicio</a><li/>
+	<li><a href="../acerca.html">Acerca </a><li/>
+	<li><a href="../servicio.html">Proyecto </a><li/>
+	<li><a href="../trabajo.html">Trabajos</a><li/>
+	<li><a href="../contacto.html">Contacto</a><li/>	
+
+</ul>
+	</nav>	
+      </div>
+    </div>
+  </section>
+<!--la etiqueta section permite trabajar por secciones, es decir por bloques donde se puede colocar un título diferente a cada seccción -->
+	<section id="contenido">
+		<!--acá se agrega un contenedor que va a contener todo lo de los servios a su ves dentro de este contenedor se agregara otro-->
+		<section id="servicios-principal">
+			<br/>
+			
+			<div class="main clearfix">
+				
+				<div class="column">
+					<div id="dl-menu" class="dl-menuwrapper">
+						<button class="dl-trigger">Open Menu</button>
+					<ul class="dl-menu">
+							<li>
+								<a href="planteamiento.html">1.Descripción del Problema</a>
+								
+							</li>
+							<li>
+								<a href="justificacion.html">2.Justificación</a>
+								<!--<ul class="dl-submenu">
+									<li><a href="#">Camera &amp; Photo</a></li>
+									<li><a href="#">TV &amp; tipo Cinema</a></li>
+									<li><a href="#">Phones</a></li>
+									<li><a href="#">PC &amp; Video Games</a></li>
+								</ul>-->
+							</li>
+							<li>
+								<a href="#">3.Objetivos</a>
+								<ul class="dl-submenu">
+									<li>
+										<a href="objetivos.html">3.1 Objetivo general</a>
+									</li>	
+									<li>
+										<a href="objetivos.html#especificos">3.2 Objetivo específico</a>
+									</li>
+								
+								</ul>
+							</li>
+							<li>
+								<a href="antecedentes.html">4.Antecedentes</a>
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="#">5.Marco de referencia</a>
+								<ul class="dl-submenu">
+									<li>
+										<a href="marcoreferencia#teorico">5.1 Marco teórico</a>
+									</li>
+									<li>
+										<a href="marcoreferencia#conceptual">5.2 Conceptual</a>
+									</li>
+									<li>
+										<a href="marcoreferencia#historico">5.3 Historico</a>
+									</li>
+									<li>
+										<a href="marcoreferencia#estado">5.4 Estado actual</a>
+									</li>
+									<li>
+										<a href="marcoreferencia#politico">5.5 Politico & legal</a>
+									</li>
+									
+									<li>
+										<a href="marcoreferencia#tecnologico">5.6 Tecnologico</a>
+									</li>
+								
+								</ul>
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="Metodologia.html">6.Metodología</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="esquema.html">7.Esquema temático</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="presupuesto.html">8.Presupuesto</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="cronograma.html">9.Cronograma</a>
+								
+							</li>
+							<!--bloque-->
+							<li>
+								<a href="bibliografia">10.Bibliografía</a>
+								
+							</li>
+
+						</ul>
+					</div><!-- /dl-menuwrapper -->
+				</div>
+			</div>
+			
+				 
+			 <nav id="menu-peque">
+			
+					<li><a class="nudge" href="../Text-Editor/demo.html" target="_blank">Editar</a><li/>
+					<a class="nudge" href="../Formato.doc" download="Formato Guia">Descargar Formato</a><br/>
+					<!--<a class="nudge" href="#">Agregar evento</a>-->
+					
+					<a class="ifancybox nudge" href="http://localhost/paginaweb/calendario/">Agregar evento</a>
+			
+			</nav>
+			<!--<img id="img-servicios" src="img/servicios.png" alt="Servicios"/>
+			Imagen del corazón que esta sobre todo en un costado
+			<img src="http://uppix.com/f-imageedit_17_36253813f910016872d.gif" style=" position: fixed; left: 2px; top: 420px;  border=" target="_blank" rel="nofollow" alt="corazón"><!--el alt="" es para cuando no se carga la imagen que muestre el comentario-->
+		<!--Article para el texto de los servicios-->
+
+			
+
+		<section id="trabajos">
+		<h3>Ejemplos Tabla de presupuesto</h3>
+		<div class="portafolio">
+			<article>
+				<!--Necesita el atributo rel por que así es como lo va a jalar el jquery:: la clase fade esta programa para cuando se pase el mouse por encima de la imgen se opaque:: title es lo que va aparecer debajo de la imagen-->
+				<!--<a rel="trabajos" class="fade" href="Text-Editor/demo.html">-->
+				<a rel="trabajos"class="fade" href="../img/presupuesto/ejem1.png"title="Ejemplo 1">
+					<!--aca va la imagen pequeña-->
+					<img class="redonda"src="../img/presupuesto/ejem1-mini.png">
+				</a>
+			</article>
+			<article>
+				<a rel="trabajos" class="fade" href="../img/presupuesto/ejem2.png" title="Ejemplo 2">
+				<img class="redonda"src="../img/presupuesto/ejem2-mini.png">
+				</a>
+			</article>
+			<article>
+				<a rel="trabajos" class="fade" href="../img/presupuesto/ejem3.png" title="Ejemplo 3">
+				<img class="redonda"src="../img/presupuesto/ejem3-mini.png">
+				</a>
+			</article>
+			
+		 </div>
+	</section>
+			
+		</section>
+		<section id="servicios-tipos">
+			<article id="servicio1">
+				<!--Acá va el menú de navegación de la estructura de desarrollo del proyecto-->
+				
+					<p></p>
+					<br/>
+					<img class="img-texto"src="../img/presupuesto1.jpg"/>
+				<p>Dentro de las actividades relacionadas con los proyectos, la planificación del presupuesto constituye un elemento básico y primordial para garantizar su sostenibilidad 
+					<cite>(Rómero,Hernández & cruz, 2011).</cite>
+				</p>
+					<br/>
+					
+				<!--Etiqueta hr dibuja linea horizontal-->
+				<hr/> Generalmente, el presupuesto se presenta en una tabla. <p id="comentario">Ver los ejemplos expuestos</p>
+			</article>
+				<!--Etiqueta audio PARA QUE EL AUDIO SEA responsibe desing se tiene que meter en un contedor en una div-->
+				<article id="servicio2">
+					<h3>Partidas fundamentales</h3>
+					<p style="text-align: justify;"> El presupuesto de un proyecto de investigación consta de dos partidas fundamentales: <br/><br/>
+					<h2 id="subtitulos"><b>Gastos directos</b></h2> relacionado con su ejecución y constituyen el mayor peso del valor total a calcular. <br/><br/>
+					<h2 id="subtitulos"><b>Gastos indirectos</b></h2><p style="text-align: justify;"> Mecanismo mediante el cual se incorporan a la actividad principal los costos complementarios de las tareas de dirección, apoyo, servicios y otras que realice la entidad en cuestión <br/><cite>(Rómero,Hernández & cruz, 2011).</cite>  </p>
+				
+				<!--Video de youtube-->
+				</article>
+				<p>-----------</p>
+				<article id="servicio1">
+					
+						<h3>Presupuesto en tu proyecto</h3>
+
+						<center><iframe width="420" height="315" src="https://www.youtube.com/embed/zfjUZky24WU" frameborder="0" allowfullscreen></iframe></center>
+				</article>
+				
+				<article id="servicio2">
+					
+						<h3>Planificar el presupuesto</h3>
+
+						<iframe width="420" height="315" src="https://www.youtube.com/embed/uNWz2RHOFaI" frameborder="0" allowfullscreen></iframe>
+				</article>
+
+	</section>
+<footer><p><b>&copy; Copyright</b> Fabián Durán <br/><br/></p></footer>	
+	</section>
+		
+
+<script src="../js/modernizr.custom.js"></script>
+	<!--Se invoca desde los servidores de google la librería de Jquery, por eso solo funciona con internet -->
+	
+	  <script type="text/javascript" src="../js/n/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="../js/n/plugins.js"></script>
+
+		<script src="../js/jquery.dlmenu.js"></script>
+		<script>
+			$(function() {
+				$( '#dl-menu' ).dlmenu({
+					animationClasses : { classin : 'dl-animate-in-3', classout : 'dl-animate-out-3' }
+				});
+			});
+		</script>
+
+		<script async type="text/javascript">
+				$(document).ready(function(){
+					$("#animacion").hide("slow");
+					$("#animacion").show(1200, function(){
+					//$("#animacion").css("color", "#990000");
+												      });
+											});
+		</script>
+		<!--Animación del menu pequeño de enlace; editor; descarga..-->
+			<script type='text/javascript'>
+				// <![CDATA[
+				$(document).ready(function() {
+				$('a.nudge').hover(function() { //mouse in
+				$(this).animate({ paddingLeft: '45px' }, 400);
+				}, function() { //mouse out
+				$(this).animate({ paddingLeft: '1px' }, 400);
+				});
+				});
+				//]]>
+			</script>
+
+			<!--iframe fancybox-->
+	<script src="../js/jquery.fancybox.js"></script>
+	<script src="../js/jquery.mousewheel-3.0.6.pack.js"></script>
+			<!--iframe fancybox-->
+	<script>
+	/*Al documento le voy a prender el evento ready*/
+		$(document).on("ready",function(){
+			/*cunado se inicia con $ es por que es jquery*/
+			$(".fade").fancybox();
+		});
+	</script>		
+	<script>
+	$(document).ready(function(){
+    $(".ifancybox").fancybox({
+         'width' : '75%',
+         'height' : '75%',
+         'autoScale' : false,
+         'transitionIn' : 'none',
+         'transitionOut' : 'none',
+         'type' : 'iframe'
+     });
+ 		});</script>
+
+</body>
+<html/>
+
+

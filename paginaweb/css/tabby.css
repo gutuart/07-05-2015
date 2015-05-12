@@ -1,0 +1,135 @@
+.tabby-tabs ul li, .tabby-tabs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+p
+{
+  text-align: justify;
+  padding: .4em;
+
+}
+
+div#example-tab-content
+{
+  width: 98%;
+    height: 200px;
+    overflow: scroll;
+      
+}
+#tresd
+{
+  
+    -webkit-perspective: 150px; /* Chrome, Safari, Opera */
+    -webkit-perspective-origin: 10% 10%; /* Chrome, Safari, Opera */
+    perspective: 150px;
+    perspective-origin: 10% 10%; 
+}
+#tabby-1
+{
+  -webkit-transform: rotateX(6deg); /* Chrome, Safari, Opera */
+    transform: rotateX(6deg);
+}
+
+.tabby-tabs ul li, .tabby-tabs ul {
+  list-style: none;
+  margin: 0;
+  padding: 1px;
+}
+
+.tabby-tabs ul:before {
+  display: table;
+  content: " ";
+}
+
+.tabby-tabs ul:after {
+  clear: both;
+  display: table;
+  content: " ";
+}
+
+.tabby-tabs ul {
+  margin-bottom: 15px;
+}
+
+.tabby-tabs ul li {
+  float: left;
+  position: relative;
+  display: block;
+}
+
+.tabby-tabs ul li a {
+  background: #ffffff;
+  position: relative;
+  display: inline-block;
+  padding: 10px 40px 10px 30px;
+  border: 3px solid #1E6381;
+  border-radius: 4px;
+  color: #34495e;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin: 0 auto;
+  width: 80px;
+  height: 25px;
+  left: 50%;
+    top: 50%;
+  
+  -ms-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+
+
+ul li a.active {
+  background-color: #34495e;
+  color: #fff;
+  text-decoration: none;
+
+}
+
+div[data-tab] {
+  display: none;
+  position: relative;
+  min-height: 200px;
+  padding-bottom: 40px;
+}
+img#img-interrogantes
+{
+  width: 100px;
+  height: 100px;
+  float: left;
+  padding: 0.25em;
+  border-radius: 0 0.5em 0 0.5em;
+}
+#img-interrogantes
+{
+   /*-ms-transform: rotate(7deg);  IE 9 
+    -webkit-transform: rotate(7deg); /* Chrome, Safari, Opera *
+    transform: rotate(7deg);*/
+   
+}
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -25px 0 -25px 0;
+  border-bottom: 6px solid rgba(0, 0, 0, .1);
+  border-left: 6px solid rgba(0, 0, 0, .1);
+  border-right: 6px solid rgba(0, 0, 0, .1);
+  border-top: 6px solid rgba(0, 0, 0, .4);
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+  -webkit-animation: rot .6s infinite linear;
+          animation: rot .6s infinite linear;
+}
+@-webkit-keyframes rot {
+  from {-webkit-transform: rotate(0deg):transform: rotate(0deg);}
+  to {-webkit-transform: rotate(359deg):transform: rotate(359deg);}
+}
+@keyframes rot {
+  from {-webkit-transform: rotate(0deg):transform: rotate(0deg);}
+  to {-webkit-transform: rotate(359deg):transform: rotate(359deg);}
+}

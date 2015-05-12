@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<title>Guide Project Acerca </title>
+	<!--la etiqueta meta se utiliza para agregar información a la página-->
+	<!--el meta charset detemina como se verán ciertos caracateres -->
+	
+	<meta name="description"content="En esta secci&oacute;n se encuentra informaci&oacute;n de mi "/>
+	<meta name="viewport" content="width=device-width,initial-scale=1"/><!-- meta especifica. el viewport sirve para que el dispositivo que este visualizando el sitio web lo veo según el ancho del dispositivo -->
+	<link rel="shortcut icon" type="image/x-icon" href="faviconGp.ico"/>
+	<link rcl="author" type="text/plain" href="humans.txt"/>
+	<!-- se recomienda que los plug-in esten antes de cargar la libreria de css-->
+	<link rel="sitemap" type="aplication/xml"title="sitemap" href="sitemap.xml"/>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css"/>
+	<!--Se invoca desde los servidores de google la librería de Jquery, por eso solo funciona con internet -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+		!window.Jquery && document.write("<script src='js/jquery.min.js'><\/script>");
+		</script>
+	 
+</head>
+<body>
+<!-- Navigation -->
+  <section id="navigation" class="navbar-fixed-top ">
+    <div class="menu-position">
+      <div class="nav-logo"> 
+        <a href="index.html" class="logo">
+          <img src="img/Titulo.png" class="fade  rotarY"id="maximizar"alt="logo">
+        </a>
+      </div>
+
+      <a class="mini-nav-button"><i class="nav-fa fa fa-bars"></i></a>
+
+      <div class="nav-menu"> 
+    <nav id="menu-principal"><!--es una etiqueta de menú de navegación, o conjunto de enlaces a otras páginas-->
+<ul>
+	<li><a href="index.html"class="active">Inicio</a><li/>
+	<li><a href="acerca.html">Acerca </a><li/>
+	<li><a href="servicio.html">Proyecto </a><li/>
+	<li><a href="trabajo.html">Trabajos</a><li/>
+	<li><a href="contacto.html">Contacto</a><li/>	
+
+</ul>
+	</nav>	
+      </div>
+    </div>
+  </section>
+<!--la etiqueta section permite trabajar por secciones, es decir por bloques donde se puede colocar un título diferente a cada seccción -->
+<section id="contenido">
+	
+<article id="descripcion-acerca"> 
+	<h3>Introducción</h3>
+	<p>
+		El proyecto consiste en el desarrollo de software educativo para apoyar o guiar de forma interactiva la elaboración de proyectos de investigación de los distintos programas académicos de la Fundación Universitaria de San Gil -  UNISANGIL. Las aplicaciones serán diseñadas bajo los entornos de Html5, CSS3, Javascript  y el framework Phonegap, dando como resultado aplicaciones hibridas.  El desarrollo metodológico estará apoyado por un análisis de encuestas a estudiantes para determinar las estrategias a usar de tal forma que se adapten a las necesidades del usuario. Como resultado final se obtendrá un clúster de aplicaciones educativas para el  apoyo del aprendizaje constructivista en los procesos de formulación y elaboración de proyectos de investigación.
+		<br></br><!--hace un espacio-->
+		
+		<!-- please do not remove this line -->
+
+		<div style="display:none;">
+		<a href="http://slipsum.com">lorem ipsum</a></div>
+	</p>
+	<!--Linea horizontal para separar el texto-->
+	<hr />
+	<h3>Objetivo</h3>
+	<p><!-- start slipsum code -->
+
+		Diseñar e implementar un clúster de aplicaciones educativas-interactivas orientadas a dispositivos móviles y web, para orientar la elaboración de proyectos de investigación en los estudiantes de la Fundación Universitaria de San Gil - UNISANGIL.
+
+		<!-- please do not remove this line -->
+
+		<div style="display:none;">
+		<a href="http://slipsum.com">lorem ipsum</a></div>
+	</p>
+</article>
+
+<article id="multimedia-acerca">
+	<figure id="img-acerca">
+		<img src="img/acerca1.jpg"alt="acerca"/>
+			<figcaption>La motivación nos impulsa a investigar
+			</figcaption>
+	</figure>
+	<video id="video-acera" controls autoplay>
+		<source src="video/acerca.mp4" type="video/mp4"/>
+		<!--<source src="video/video-prueba.webm" type="video/webm"/>
+		<source src="video/video-prueb.ogv" type="video/ogg"/>-->
+
+
+		</video>
+</article>
+<footer><p><b>&copy; Copyright</b> Fabián Durán <br/><br/></p></footer><!-- publicidad y bot sociales..target="_blank abre el link en otra pestaña-->
+	</section>
+
+		<script type="text/javascript" src="js/n/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="js/n/plugins.js"></script>	
+
+</body>
+<html/>
+
+
